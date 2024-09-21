@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="w-full h-screen bg-cover bg-center flex items-center justify-center"> 
+  <main class="main-container">
+
+
+    <header class="input-container">
+      <input type="text" class="city-input" placeholder="Search City">
+      <button class="search-btn"><span class="material-symbols-outlined">
+        search
+        </span></button>
+    </header>
+  
+    <!-- weather details section -->
+
+    <section class="wheather-info " style="display: none;">
+
+
+      <div class="location-date-container flex justify-between  items-center mt-[20px]">
+        <div class="location flex items-center gap-[6px] ">
+          <span class="material-symbols-outlined">
+            location_on
+            </span>
+            <h4 class="country-text"> </h4>
+        </div>
+        <h5 class="current-date-txt regular-text"> </h5>
+      </div>
+
+      <div class="weather-summery-container">
+        <img src="Assets/bg.jpg" alt="" class="weather-img">
+        <div class="weather-summery-info">
+          <h1 class="temp-txt"> </h1>
+          <h3 class="condition-text regular-text"> </h3>
+        </div>
+      </div>
+
+      <div class="weather-condition-container ">
+        <div class="condition-item">
+          <span class="material-symbols-outlined">
+            water_drop
+            </span>
+            <div class="condition-info">
+              <h5 class="regular-text">Humidity</h5>
+              <h5 class="humidity-value-text"> </h5>
+            </div>
+        </div>
+        <div class="condition-item">
+          <span class="material-symbols-outlined">
+            air
+            </span>
+              <div class="condition-info">
+                <h5 class="regular-text">Wind Speed</h5>
+                <h5 class="wind-value-text"> </h5>
+              </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </section>
+
+    <!-- section search city -->
+
+    <section class="search-city section-message  ">
+      <img src="Assets/man-searching.png" alt=""  >
+      <div>
+        <h1 class="-mt-[20px]">Search City</h1>
+        <h4 class="regular-text">Find out the weather conditions of the city</h4>
+      </div>
+     </section>
+
+    <!-- not found -->
+
+    <section class="not-found section-message  " style="display: none;"> 
+      <img src="Assets/404.png" alt=""  >
+      <div>
+        <h1>Search City</h1>
+        <h4 class="regular-text">Find out the weather conditions of the city</h4>
+      </div>
+     </section>
+  </main>
+</body>
+
+<script src="script.js"></script>
+</html>
